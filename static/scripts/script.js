@@ -4,6 +4,7 @@ let btnPause = document.querySelector(".next");
 let btnPrev = document.querySelector(".prev");
 let audio = document.getElementById('audio');
 let vol = document.getElementById('customRange1');
+let img = document.getElementById('pbt');
 
 let sng = new Audio("/static/aye.mp3");
 let check = 1;
@@ -17,13 +18,15 @@ play.addEventListener("click", function() {
             let audioLength = Math.round(sng.duration)
             time.style.width = (audioTime * 100) / audioLength + '%';
         }, 10)
-        check = 0
+        check = 0;
+        img.src = "/static/pause.png";
     }
-    else {sng.pause(); check = 1;}
+    else {sng.pause(); check = 1; img.src = "/static/play.png";}
 
 });
 vol.addEventListener("click", function() {
     console.log(v);
     v = vol.value;
     sng.volume = v / 100;
+    vol.value = v;
 });
