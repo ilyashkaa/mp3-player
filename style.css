@@ -1,0 +1,71 @@
+.app {
+    height: 100vh;
+}
+.sidebar   {
+    width: 20%;
+}
+
+.info   {
+    height: 85%;
+    max-height: 85%;
+}
+
+.player{
+    height: 15%;
+}
+
+.main{
+    width: 80%;
+}
+
+#controls {
+    display: flex;
+    align-items: center;
+}
+
+.pbt{
+    background:transparent;
+    border-width: 0px;
+}
+
+.audio-track {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.time{
+margin: 0px;
+ }
+
+
+.bar {
+    width: 80%;
+    height: 6px;
+    background-color: rgb(214, 214, 214);
+    overflow: hidden;
+}
+
+.line-bar {
+    width: 0%;
+    height: 100%;
+    background-color: rgb(90, 90, 90);
+}
+
+.srch{
+    position: sticky;
+    top:0;
+    min-height: 5px;
+}
+.play{
+    background:transparent;
+    border-width: 0px;
+}
+.prev{
+    background:transparent;
+    border-width: 0px;
+}
+.next{
+    background:transparent;
+    border-width: 0px;
+}
