@@ -9,6 +9,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Document</title>
     <link rel="stylesheet" href="/static/style.css">
+    <script type="text/javascript" src="/eel.js"></script>
     
 </head>
 
@@ -23,7 +24,7 @@
                     <input type="text" class="form-control" id="Search-1"
                         placeholder="Введите название или исполнителя">
                 </div>
-
+            {% block track %}{% endblock %}
 
             </div>
             <div class="player py-2  border bg-light h-100">
@@ -37,9 +38,9 @@
                         <div class="bar">
                             <div class="line-bar"></div>
                         </div>
-                        <p>     </p><input type="range" class="form-range px-2" step="10" value="50" id="customRange1">
+                        <p>     </p><input type="range" class="form-range px-2" step="10" value="100" id="customRange1">
                     </div>
-                        <audio id="audio"><source src="/static/aye.mp3"></audio>
+                        <audio id="audio"><source src="/static/music/aye.mp3"></audio>
                 </div>
 
             </div>
